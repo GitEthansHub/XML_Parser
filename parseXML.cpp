@@ -28,7 +28,7 @@ void parseXML(const char *filename)
             {
                 if (titleNode->type == XML_ELEMENT_NODE && xmlStrEqual(titleNode->name, BAD_CAST "title"))
                 {
-                    std::cout << "Book Title: " << xmlNodeGetContent(titleNode) << std::endl;
+                    std::cout << "Book: " << xmlNodeGetContent(titleNode) << std::endl;
                 }
                 titleNode = titleNode->next;
             }
